@@ -33,7 +33,15 @@ booksWrapper.innerHTML = booksHtml;
 }
 
 
+function priceHTML(originalPrice, salePrice) {
+  if (!salePrice) {
+    return `$${originalPrice.toFixed(2)}`
+  }
+  return 'there is a sale'
 
+}
+
+  
 
 
 function ratingsHTML(rating) {
@@ -79,7 +87,7 @@ function getBooks() {
       title: "Atomic Habits",
       url: "assets/atomic habits.jpg",
       originalPrice: 39,
-      salePrice: 25,
+      salePrice: null,
       rating: 5,
     },
     {
