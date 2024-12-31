@@ -54,7 +54,7 @@ function ratingsHTML(rating) {
 function filterBooks(event) {
     renderBooks(event.target.value);
   }
-}
+
 
 
 
