@@ -22,7 +22,7 @@ function renderBooks(filter) {
                 </figure>
                 <div class="book__title">${book.title}</div>
                 <div class="book__ratings">${ratingsHTML(book.rating)}</div>
-                <div class="book__price"><span>$${book.originalPrice.toFixed(2)}</span></div>
+                <div class="book__price">${priceHTML(book.originalPrice, book.salePrice)}</div>
               </div>`;
 })
   .join("");
