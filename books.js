@@ -1,4 +1,5 @@
 let books;
+// we are setting a global variable let books
 
 async function renderBooks(filter) {
   const booksWrapper = document.querySelector('.books')
@@ -8,10 +9,6 @@ async function renderBooks(filter) {
   if (!books) {
     books = await getBooks();
   }
-
-
-  const books = await getBooks();
-
 
   booksWrapper.classList.remove('books__loading')
 
