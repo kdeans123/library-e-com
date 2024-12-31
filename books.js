@@ -33,12 +33,14 @@ booksWrapper.innerHTML = booksHtml;
 }
 
 
+
+
+
 function ratingsHTML(rating) {
   let ratingHTML = '';
   for (let i=0; i < Math.floor(rating); ++i) {
     ratingHTML += '<i class="fas fa-star"></i>'
   }
-
   if (!Number.isInteger(rating)) {
     ratingHTML += '<i class="fas fa-star-half-alt"></i>'
   }
