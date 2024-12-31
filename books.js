@@ -37,10 +37,8 @@ function priceHTML(originalPrice, salePrice) {
   if (!salePrice) {
     return `$${originalPrice.toFixed(2)}`
   }
-  return 'there is a sale'
-
+  return  `<span class="book__price--normal">$${originalPrice.toFixed(2)}</span>$${salePrice.toFixed(2)}`
 }
-
   
 
 
