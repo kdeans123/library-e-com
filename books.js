@@ -17,18 +17,13 @@ function renderBooks(filter) {
   const booksHtml = books
   .map(book => {
       return `<div class="book">
-        <figure class="book__img--wrapper">
-            <img class="book__img" src="${book.url}" alt="">
-        </figure>
-        <div class="book__title">
-         ${book.title}
-              <div class="book__ratings">
-              ${ratingsHTML(book.rating)}
-              </div>
-              <div class="book__price">
-            <span>$${book.originalPrice.toFixed(2)}</span>
-          </div>
-        </div>`;
+                <figure class="book__img--wrapper">
+                      <img class="book__img" src="${book.url}" alt="">
+                </figure>
+                <div class="book__title">${book.title}</div>
+                <div class="book__ratings">${ratingsHTML(book.rating)}</div>
+                <div class="book__price"><span>$${book.originalPrice.toFixed(2)}</span></div>
+              </div>`;
 })
   .join("");
 
